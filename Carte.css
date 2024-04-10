@@ -1,0 +1,94 @@
+.product-card {
+    border: 2px solid linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 250px; /* Ajustez selon vos préférences */
+    height: 450px; /* Ajustez selon vos préférences */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajouter une ombre portée */
+    transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.product-card:hover {
+    transform: scale(1.1); /* Zoom de 10% lorsque survolé */
+    cursor: pointer;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #372D61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #674cd3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+footer {
+    position: fixed; /* ou position: absolute; */
+    bottom: 0;
+    max-width: 100%;
+}
+
+.product-card p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.product-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animation pour faire apparaître les éléments */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation avec un délai différent à chaque élément */
+.product-card {
+    animation: fade-in 0.5s forwards;
+    animation-delay: 0.5s; /* Délai pour le premier élément */
+}
+
+@media screen and (max-width:1320px) {
+    footer {
+        max-width: 100%;
+    }
+}

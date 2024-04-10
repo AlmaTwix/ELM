@@ -1,0 +1,320 @@
+.link_hover_effect {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    overflow: hidden; /* Cache le contenu débordant */
+  }
+  
+  .link_hover_effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0); /* Initialiser à zéro pour le cacher au départ */
+    transform-origin: left; /* Définir le point d'origine de la transformation à gauche */
+    transition: transform 300ms ease; /* Ajouter une transition pour une animation en douceur */
+  }
+  
+  .link_hover_effect:hover::after {
+    transform: scaleX(1); /* Affiche la ligne lors du survol */
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+
+
+
+  body {
+    background-image: url(./Assets/6295bb69332851c2f0dafd58_Wave.svg);
+      /*background-color: #FCFCFC;*/
+      margin: 0px 0px 0px 0px;
+      font-family: "Poppins";
+  }
+
+main {
+    max-width: 1400px;
+    margin: 40px auto;
+    justify-content: center; /* alignement horizontal au centre */
+    align-items: center;
+}
+
+/*HEADER*/
+
+nav {  
+  height: 50px;
+  margin:  auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.logo {
+  height: 85px; /* Ajustez la hauteur du logo selon vos besoins */
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.menu {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.menu a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333; /* Couleur du texte du menu */
+  font-size: 25px;
+  font-weight: bold ;
+}
+
+.contact {
+  margin-right: 2%;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white; /* Couleur du texte du bouton de contact */
+  font-size: 25px;
+  padding: 6px 60px;
+  border: 3px solid #372D61; /* Couleur de la bordure du bouton de contact */
+  border-radius: 40px; /* Arrondir les coins du bouton */
+  transition: all 0.3s ease;
+  font-weight: bold ;
+  background-color: #372D61;
+}
+
+.contact a:hover {
+  background-color: #674cd3; /* Couleur de fond au survol du bouton */
+  color: #fff; /* Couleur du texte au survol du bouton */
+  border: 3px solid #674cd3;
+}
+
+
+  /*SOCIALS*/
+
+
+  .social-menu {
+    position: fixed; /* Position fixe */
+    top: 30%; /* Centré verticalement */
+    right: 2%; /* Alignement à droite */
+    z-index: 1000; /* Assurez-vous que la barre est devant le contenu */
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-icons i {
+    margin: 10px 0;
+    transition: transform 0.4s;
+    cursor: pointer;
+  }
+  
+  .vertical-bar {
+    width: 2px; /* Largeur de la barre */
+    height: 132px; /* Hauteur de la barre */
+    background-color: black;
+    margin: 10px auto; /* Espacement entre les barres */
+  }
+
+  .social-icons i:hover {
+    transform: scale(1.6); /* Agrandissement de 10% au survol */
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 48px;
+  }
+
+/* FORM */
+
+.container {
+  max-width: 500px; /* Augmentation de la largeur maximale */
+  margin: 29px auto;
+  padding: 30px; /* Augmentation du rembourrage */
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 30px; /* Augmentation de la marge entre les groupes de formulaire */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Augmentation de la marge sous les labels */
+  font-family: "David CLM", sans-serif;
+  font-weight: bold;
+  color: #FCFCFC;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px 0px; /* Augmentation du rembourrage vertical */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Augmentation du rayon de bordure */
+  font-family: "David CLM", sans-serif;
+  font-size: 16px; /* Augmentation de la taille de police */
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #674cd3;
+  color: #fff;
+  padding: 15px 30px; /* Augmentation du rembourrage */
+  border: none;
+  border-radius: 8px; /* Augmentation du rayon de bordure */
+  cursor: pointer;
+  font-size: 16px; /* Augmentation de la taille de police */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.response-message {
+  margin-top: 30px; /* Augmentation de la marge en haut du message de réponse */
+  font-weight: bold;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px; /* Ajoute de l'espace intérieur autour du texte */
+    height: 90px;
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    position: fixed; /* ou position: absolute; */
+    bottom: 0;
+    max-width: 100%;
+  }
+  
+  footer p {
+    margin: 0; /* Supprime les marges par défaut du paragraphe */
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  footer a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+  }
+
+
+
+  .social-icons a {
+    color: black;
+  }
+
+  .container {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Animation pour faire apparaître les éléments */
+  @keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Appliquer l'animation avec un délai différent à chaque élément */
+  .container {
+    animation: fade-in 0.5s forwards;
+    animation-delay: 1s; /* Délai pour le premier élément */
+  }
+  
+  h1 {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  h1 {
+    animation: fade-in 0.5s forwards;
+    animation-delay: 0.5s; /* Délai pour le premier élément */
+  }
+
+
+  @media screen and (max-width:1320px) {
+    .menu a {
+      font-size: 15px;
+      margin: 0 10px;
+    }
+  
+    .contact a {
+      font-size: 20px;
+      padding: 3px 30px;
+    }
+  
+    .menu {
+      margin-left: 0px;
+    }
+
+    }
+
+
+
+    @media screen and (max-width:1320px) {
+
+      .container {
+        max-width: 400px;
+      }
+
+      footer {
+        max-width: 100%;
+      }  
+    }
+
+
+    @media screen and (max-width:430px) {
+      footer {
+        max-width: 100%;
+      }
+
+      .container {
+        max-width: 300px;
+      }
+
+    }
+
+    @media screen and (max-width:680px) {
+      footer {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-width:670px) {
+      .menu {
+        display: none;
+      }
+    }

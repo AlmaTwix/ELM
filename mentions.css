@@ -1,0 +1,49 @@
+p {
+    font-size: 25px;
+}
+
+
+.pp p {
+    display: flex;
+     justify-content: center;
+     margin-top: 50px;
+      }
+   
+   
+   .pp { 
+       text-align: center; /* Pour centrer horizontalement le contenu */
+       max-width: 1000px; /* Facultatif : pour limiter la largeur du contenu */
+       margin: 40px auto; /* Pour centrer horizontalement le bloc */
+        }
+
+    footer {
+        max-width: 100%;
+    }
+
+
+
+    @media screen and (max-width:1030px) {
+        .menu a {
+          font-size: 15px;
+          margin: 0 10px;
+        }
+      
+        .contact a {
+          font-size: 20px;
+          padding: 3px 30px;
+        }
+      
+        .menu {
+          margin-left: 0px;
+        }
+      
+         }
+      
+      
+         @media screen and (max-width:600px) {
+      
+          .menu {
+            display: none;
+          }
+         }
+      

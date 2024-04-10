@@ -1,0 +1,810 @@
+.link_hover_effect {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  overflow: hidden; /* Cache le contenu débordant */
+}
+
+.link_hover_effect::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform: scaleX(0); /* Initialiser à zéro pour le cacher au départ */
+  transform-origin: left; /* Définir le point d'origine de la transformation à gauche */
+  transition: transform 300ms ease; /* Ajouter une transition pour une animation en douceur */
+}
+
+.link_hover_effect:hover::after {
+  transform: scaleX(1); /* Affiche la ligne lors du survol */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/*Begin*/
+
+
+/* Test Carousel*/
+
+.carousel {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  perspective: 1000px; /* Ajout de la perspective pour l'effet 3D */
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg); /* Rotation initiale */
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item:nth-child(1) {
+  transform: translate(-50%, -50%) rotateY(-45deg) translateX(-200px); /* Position pour la première image */
+}
+
+.carousel-item:nth-child(2) {
+  transform: translate(-50%, -50%) rotateY(0deg); /* Position pour la deuxième image (au centre) */
+}
+
+.carousel-item:nth-child(3) {
+  transform: translate(-50%, -50%) rotateY(45deg) translateX(200px); /* Position pour la troisième image */
+}
+
+
+
+
+.testtt{
+  position: absolute;
+  max-width: 1400px;
+}
+
+body {
+  background-image: url(./Assets/6295bb69332851c2f0dafd58_Wave.svg);
+    /*background-color: #FCFCFC;*/
+    margin: 0px 0px 0px 0px;
+    font-family: "Poppins";
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center; /* alignement horizontal au centre */
+    align-items: center;
+}
+
+/*HEADER*/
+
+
+nav {  
+    height: 50px;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .logo {
+    height: 85px; /* Ajustez la hauteur du logo selon vos besoins */
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .menu {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 10%;
+  }
+  
+  .menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333; /* Couleur du texte du menu */
+    font-size: 25px;
+    font-weight: bold ;
+  }
+  
+.contact {
+    margin-right: 2%;
+}
+
+  .contact a {
+    text-decoration: none;
+    color: white; /* Couleur du texte du bouton de contact */
+    font-size: 25px;
+    padding: 6px 60px;
+    border: 3px solid #372D61; /* Couleur de la bordure du bouton de contact */
+    border-radius: 40px; /* Arrondir les coins du bouton */
+    transition: all 0.3s ease;
+    font-weight: bold ;
+    background-color: #372D61;
+  }
+  
+  .contact a:hover {
+    background-color: #674cd3; /* Couleur de fond au survol du bouton */
+    color: #fff; /* Couleur du texte au survol du bouton */
+    border: 3px solid #674cd3;
+  }
+
+
+  /*SOCIALS*/
+
+
+  .social-menu {
+    position: fixed; /* Position fixe */
+    top: 30%; /* Centré verticalement */
+    right: 2%; /* Alignement à droite */
+    z-index: 1000; /* Assurez-vous que la barre est devant le contenu */
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons a {
+    color: black;
+  }
+  
+  .social-icons i {
+    margin: 10px 0;
+    transition: transform 0.4s;
+    cursor: pointer;
+  }
+  
+  .vertical-bar {
+    width: 2px; /* Largeur de la barre */
+    height: 132px; /* Hauteur de la barre */
+    background-color: black;
+    margin: 10px auto; /* Espacement entre les barres */
+  }
+
+  .social-icons i:hover {
+    transform: scale(1.6); /* Agrandissement de 10% au survol */
+  }
+
+
+
+/* LANDPAGE S1*/
+
+  
+.s1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centre les éléments horizontalement */
+  text-align: center; /* Centre le texte dans les éléments */
+  justify-content: center;
+}
+
+
+
+.img_header {
+  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur de son conteneur */
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.img_header:hover {
+  transform: scale(1.1);
+}
+
+.ndimage {
+  position: absolute;
+  margin-top: 300px; /* Ajoute un espace en haut pour plus de clarté */
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.ndimage:hover {
+  transform: scale(1.1);
+}
+
+.Main_Title {
+  text-align: center;
+  max-width: 800px;
+  margin-top: 50px;
+  z-index: 1;
+  
+}
+
+.Name {
+    font-family: "David CLM", sans-serif; /* Police de caractères */
+    font-size: 80px; /* Taille de la police */
+    font-weight: bold;
+    color: black; /* Couleur du texte */
+    letter-spacing: 10px; /* Espacement entre les lettres */
+    margin: 0;
+}
+
+.slogan {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 40px;
+    margin-top: 20px;
+    color: black;
+  -webkit-background-clip: text; /* Pour appliquer le dégradé au texte */
+  background-clip: text; /* Pour appliquer le dégradé au texte */
+}
+
+.imgpre {
+  text-align: center;
+}
+
+.imgtest {
+  max-width: 300px;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: transform 0.5s;
+  
+}
+
+.imgtest:hover {
+  transform: scale(1.1); /* Grossissement de l'image lorsqu'on survole */
+}
+
+.image_container {
+  position: relative;
+}
+
+.nav_link_anchor {
+  scroll-behavior: smooth;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.s2 {
+    margin-top: 120px;
+  }
+
+
+
+
+/* TABLEAU DES OFFRES*/
+
+
+.Propositions {
+  margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Distribue les éléments avec un espace entre eux */
+}
+
+.illustrations {
+  display: flex;
+  flex-direction: column; /* Les éléments sont disposés en colonne */
+  align-items: center; /* Aligner les éléments sur la droite */
+}
+
+.illustration {
+  margin-bottom: 15px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  max-width: 430px;
+  border-radius: 20px;
+  box-shadow: black 10 10 10;
+}
+
+.illustration:hover {
+  transform: scale(1.1); /* Grossissement de l'image lorsqu'on survole */
+}
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+    max-width: 867px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.table a {
+  text-decoration: none;
+}
+
+.offer {
+    width: 867px;
+    height: 121px;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-bottom: 20px; /* Espacement entre les offres */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.5s;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Pour centrer verticalement le contenu */
+}
+
+.offer:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre au survol */
+    transform: scale(1.1); /* Agrandissement de 10% au survol */
+  }
+
+.offer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex: 1; /* Pour que les éléments occupent tout l'espace disponible */
+}
+
+.price {
+    font-family: "Petit Formal Script", cursive; /* Police de caractères */
+    font-size: 48px; /* Taille de la police */
+    color: black; /* Couleur du texte */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.name {
+    font-family: "David CLM", sans-serif; /* Police de caractères */
+    font-size: 40px; /* Taille de la police */
+    font-weight: bold;
+    color: black; /* Couleur du texte */
+    letter-spacing: 5px; /* Espacement entre les lettres */
+}
+
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.offer:hover .price {
+  color: #372D61; /* Changement de couleur du prix au survol */
+}
+
+
+.fa-arrow-right {
+  font-size: 34px;
+  border: 4px solid black; /* Ajout d'une bordure */
+    border-radius: 50%; /* Bordure circulaire */
+    padding: 15px; /* Optionnel : espace intérieur pour la bordure */
+    color: black;
+}
+
+
+.offer .fa-arrow-right {
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Transition fluide par défaut */
+}
+
+.offer:hover .fa-arrow-right {
+  color: white;
+  border-color: #372D61; /* Couleur de la bordure */
+  background-color: #372D61; /* Couleur de fond */
+}
+
+
+.massages {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 15px;
+}
+
+.s2 h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  margin: 15px;
+}
+
+.separator {
+  width: 20%; /* Largeur de la ligne */
+  border: none; /* Supprimer la bordure par défaut */
+  border-top: 3px solid black; /* Ajouter une ligne horizontale */
+  margin: 10px auto; /* Espacement autour de la ligne et centrage horizontal */
+}
+
+.Tarifs {
+  align-items: center;
+  
+}
+
+.TS {
+  border: 3px solid black; /* Ajoute une bordure solide noire de 2 pixels */
+  padding: 20px 350px 20px 350px; /* Ajoute un espace intérieur autour du texte */
+  border-radius: 50px;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.7s ease;
+  font-weight: bold;
+}
+
+.TS:hover {
+  background-color: #372D61;
+  border: 3px solid #372D61;
+  color: white;
+}
+
+
+.double-images {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.double-images img {
+  border-radius: 50px;
+}
+
+.double-images .image-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.double-images .image-link img {
+  width: 95%; /* Les images occupent 100% de la largeur de leur conteneur */
+  height: auto;
+}
+
+.double-images .image-link .image-text {
+  text-align: center;
+}
+
+.image-link:hover {
+  transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+  z-index: 1;
+}
+
+.image-link {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.image-link img {
+  width: 100%; /* L'image prendra 100% de la largeur de son conteneur */
+  height: auto;
+  transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: underline;
+  color: white;
+  font-family: "David CLM", sans-serif; /* Police de caractères */
+  font-size: 28px; /* Taille de la police */
+  font-weight: bold;
+}
+
+.image-text:hover {
+  color: white; /* Change la couleur du texte au survol */
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px; /* Ajoute de l'espace intérieur autour du texte */
+  height: 90px;
+  text-align: center; /* Centre le texte horizontalement */
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+}
+
+footer p {
+  margin: 0; /* Supprime les marges par défaut du paragraphe */
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+}
+
+.imgpre {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation pour faire apparaître les éléments */
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation avec un délai différent à chaque élément */
+.imgpre {
+  animation: fade-in 0.5s forwards;
+  animation-delay: 1s; /* Délai pour le premier élément */
+}
+
+.s1 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.s1 {
+  animation: fade-in 0.5s forwards;
+  animation-delay: 0.5s; /* Délai pour le premier élément */
+}
+
+.s2 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.s2 {
+  animation: fade-in 0.5s forwards;
+  animation-delay: 1.5s; /* Délai pour le premier élément */
+}
+
+
+
+
+@media screen and (max-width:1030px) {
+  .menu a {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .contact a {
+    font-size: 20px;
+    padding: 3px 30px;
+  }
+
+  .menu {
+    margin-left: 0px;
+  }
+
+  .Name {
+    font-size: 50px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+
+  .last {
+    display: none;
+  }
+
+  .imgtest {
+    max-width: 200px;
+  }
+
+  .s2 {
+    margin-top: 90px;
+  }
+  .massages {
+    font-size: 40px;
+  }
+
+  .s2 h2 {
+    font-size: 25px;
+  }
+
+  .illustrations {
+    display: none;
+  }
+
+  .table {
+    max-width: 500px;
+  }
+
+  .offer {
+    max-width: 500px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 35px;
+  }
+
+  .TS {
+    max-width: 500px;
+    padding: 10px 150px 10px 150px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+  footer {
+    height: 50px;
+  }
+
+  .double-images .image-link {
+    max-width: 300px;
+  }
+
+  .double-images {
+    justify-content: center;
+  }
+  .image-text {
+    font-size: 21px;
+    left: 45%;
+    top: 45%;
+  }
+} 
+
+
+
+
+@media screen and (max-width:1320px){
+
+  .illustration {
+    max-width: 300px;
+    margin-right: 60px;
+  }
+  .TS {
+    max-width: 500px;
+    padding: 10px 100px 10px 100px;
+    text-align: center;
+  }
+  .table {
+    max-width: 650px;
+  }
+  .offer {
+    max-width: 650px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .double-images .image-link {
+    max-width: 500px;
+  }
+
+  .double-images {
+    justify-content: center;
+  }
+  .image-text {
+    font-size: 21px;
+    left: 45%;
+    top: 45%;
+  }
+}
+
+
+
+@media screen and (max-width:1030px) {
+  .illustrations {
+    display: none;
+  }
+
+  .last {
+    display : none;
+  }
+
+  .image-link {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width:680px) {
+
+.table {
+  max-width: 300px;
+}
+.offer {
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  height: 60px;
+}
+
+.TS {
+  padding: 10px 60px 10px 60px;
+}
+
+.name {
+  font-size: 12px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+.price {
+  font-size: 20px;
+}
+
+.fa-arrow-right {
+  font-size: 10px;
+  border: 2px solid black;
+  padding: 8px;
+}
+ }
+
+@media screen and (max-width:600px) {
+
+  .table {
+    max-width: 300px;
+  }
+
+  .image-link {
+    margin-left: 20px;
+  }
+
+  .image-text {
+    font-size: 20px;
+  }
+
+  .s2 h2 {
+    font-size: 20px;
+    margin: 0px 50px 0px 50px;
+  }
+
+  .TS {
+    padding: 10px 60px 10px 60px;
+  }
+
+  .offer {
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    height: 60px;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .contact a {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 12px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+  }
+  .price {
+    font-size: 20px;
+  }
+
+  .image-text {
+    top: 30%;
+    left: 48%;
+  }
+
+  .fa-arrow-right {
+    font-size: 10px;
+    border: 2px solid black;
+    padding: 8px;
+  }
+}
+
+
