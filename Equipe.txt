@@ -1,0 +1,173 @@
+Logo : 192x192
+25x18
+
+Ajout 8 équipes : 
+FFL :
+
+Ombre Ancestrale (Baie des Pirates)  2000339929
+1. Nero Night (Gardien)
+2. Morris Moore (Défenseur)
+3. Jet Onyx (Défenseur)
+4. Cole Ebony (Défenseur)
+5. Blake Obscura (Défenseur)
+6. Shady Shwartz (Milieu)
+7. Goth Grimshaw (Milieu)
+8. Duff Dooley (Milieu)
+9. Tynan Crowe (Milieu)
+10. Yang (Attaquant)
+11. Tezcat (Attaquant/Capitaine)
+1.Ishmael Ahab (Gardien)
+2.Octavus Kraken (Défenseur)
+3. Roger Jolly (Défenseur)
+4. Sinbad Saylor (Défenseur)
+5. Rob Crusoe (Défenseur)
+6. Cheung Po (Milieu)
+7. William Kidd (Milieu)
+8. Santelmo Phyre (Milieu)
+9. Dakkar Nemo (Milieu)
+10. Davy Jones (Attaquant, Capitaine)
+11. Calico Corsair (Attaquant)
+12. Nick Tofobia (Gardien)
+13. Marley Hookson (Milieu)
+14. Bart Black (Défenseur)
+15. Frank Drake (Défenseur)
+16. Barnabas Rossa (Attaquant)
+17. Falco Flashman (Attaquant / Galaxy)
+
+
+Mont Olympe (Mers Lunaires) 2000339930
+1. Théo Divine (Gardien)
+2. Mnemo Pool (Défenseur)
+3. Perses Destroyer (Défenseur)
+4. Lapetus Pierce (Défenseur)
+5. Phoebus Moonlight (Défenseur)
+6. Rae Godmother (Défenseur)
+7. Hyperion Wise (Attaquant)
+8. Oceanus Worldstream (Milieu)
+9. Cronus Fourseasons (Milieu, Capitaine)
+10. Coeus Heavens (Attaquant)
+11. Tet Aqua (Attaquant)
+12. Eos Dawn (Gardien)
+13. Pallas Brandish (Défenseur)
+14. Themis Law (Milieu)
+15. Atlas Carrier (Attaquant)
+16. Orion Hunter (Milieu)
+1. Alessandro il Grande (Gardien, Capitaine)
+2. Gene Ghiskhan (Défenseur)
+3. Attila Hun (Défenseur)
+4. Sun Tzu (Défenseur)
+5. Arty Xerxes (Défenseur)
+6. Darius Cyrus (Milieu)
+7. Jerry Onimo (Milieu)
+8. Leon Ohnepart (Milieu)
+9. Robert Lee (Attaquant)
+10. Doug MacArthur (Attaquant)
+11. Nobby Naga (Attaquant)
+12. Salvador Addin (Gardien, Remplaçant)
+13. Otto Bismark (Défenseur, Remplaçant)
+14. Jean Darc (Défenseur, Remplaçant)
+15. Bobby Bruce (Attaquant, Remplaçant)
+16. Hanny Bawl (Attaquant, Remplaçant)
+20. Terry Archibald (Gardien / Galaxy)
+
+
+
+Protocole Oméga 2000339931
+1. Hotel (Gardien)
+2. Oscar (Défenseur)
+3. Echo (Défenseuse)
+4. Golf (Défenseur)
+5. Charlie (Milieu)
+6. Lima (Milieu)
+7. Bravo (Milieu)
+8. India (Milieu)
+9. Juliet (Attaquante)
+10. Alpha (Attaquant, Capitaine)
+11. Mike (Attaquant)
+12. Uniform (Gardien, Remplaçant)
+13. Tango (Défenseur, Remplaçant)
+14. Zulu (Milieu, Remplaçant)
+15. X-Ray (Attaquant, Remplaçant)
+16. Delta (Attaquante, Remplaçante)
+10. Beta (Attaquant, Capitaine)
+7. Novembre (Milieu)
+3. Kilo (Défenseur)
+5. Foxtrot (Milieu)
+1. Romeo (Gardien)
+4. Yankee(Défenseur)
+5. Quebec (Milieu)
+8. Sierra (Milieu)
+10. Gamma (Attaquant, Capitaine)
+
+
+Lumière Éternelle (Collège des Mirages) 2000339932
+1. Albion Lumina (Gardien)
+2. Candido Glow (Défenseur)
+3. Dwight Whittaker (Défenseur)
+4. Beamer Daye (Défenseur)
+5. Chandler Blanc (Défenseur)
+6. Beacon Noor (Milieu)
+7. Dawntavius Spectrum (Milieu)
+8. Brighton Spark (Milieu)
+9. Laban Lux (Milieu)
+10. Filbert Weissman (Attaquant)
+11. Bailong (Attaquant, Capitaine)
+1. Abram Cadabra (Gardien)
+2. Jaymes Randie (Défenseur)
+3. Daffyd Blayne (Défenseur)
+4. Al Kazam (Défenseur)
+5. Sigfryd Roi (Défenseur)
+6. Dave Coppfielder (Milieu)
+7. Launce Berton (Milieu)
+8. Ledger Demain (Milieu)
+9. Harrold Houdini (Milieu/Capitaine)
+10. Hocus Sesame (Attaquant)
+11. Pocus Sesame (Attaquant)
+12. Pen Teller (Gardien)
+13. Petey Sorcar (Défenseur)
+14. Trump Loyal (Milieu)
+15. Daren Blakh (Attaquant)
+16. Billy Lingsoo (Attaquant)
+
+
+
+
+
+
+
+
+
+
+
+World :
+
+Naples (Collège Universel / Foi Toute-Puissante)
+
+Leverkusen (Loups d'Ouzbékistan / Falam Medius / Eternal Dancers)
+
+Monaco (Sakkā Zatsugi Dan (Troupe Acrobatique Du Football) Roses du Désespoir)
+
+Moscou (Pāfekuto Supāku (Perfect Spark) / Anima Sana / École Alia)
+
+
+
+Ajout Joueur équipe déjà existante :
+
+Alpin GO = Alpin
+Kirkwood GO + Kirkwood (Ares) = Kirkwood
+Raimon Ares + Raimon GO = Raimon
+Royal academie GO + Royal Academy (Ares) = Royal Académie
+Red Bison = Chaos
+Excellence = Zeus
+Lambda / Sélène = Otaku
+Shanghai Hoshinekodan = Card
+
+
+Barcelona Orb + Invincible Giant = Barcelone
+Fei + ragna = Ajax
+Armada Ixar + École Polaris = OM
+Zan + Zanark Domination = Dortmund
+Bastion = Real Madrid
+Arabu no Hinotori Gundan (Phénix Arabie) = Atletico Madrid
+Liverpool = Shainingu Satanzu
+
